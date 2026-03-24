@@ -1,4 +1,3 @@
-/* #header, #hero, #gallery, #footer genişlikleri 750px olmalı */
 body {
 	width:  750px;
 	text-decoration: none;
@@ -7,10 +6,18 @@ body {
 	margin-top: 20px;
 }
 
+#header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
 h2 {
 	font-weight: bold;
 	font-size: 20px;
 }
+
+/* Benim menu biraz karışık oldu sanırım bu kadar nested tag'e gerek var mıydı? */
 #menu {
 	display: flex;
 	justify-content: space-between;
@@ -20,7 +27,7 @@ h2 {
 	display: flex;
 	list-style-type: none;
 }
-
+	
 #menu a {
 	background-color: #777;
 	padding: 20px;
@@ -31,12 +38,8 @@ h2 {
 #menu a:hover {
 	background-color: #000;
 }
-/* #menu bir <nav> olmalı */
-/* #menu içindeki linklerin arka plan rengi: #777 */
-/* #menu linklerine hover yapıldığında arka plan rengi: #000 */
-/* #menu linklerinin padding değeri: 20px */
 
-#hero-section {
+#hero {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -76,7 +79,7 @@ h2 {
 	font-size: 24px;
 	
 }
-/* #footer butonu metni 'Başa dön' olmalı */
+
 footer {
 	margin-top: 80px;
 	background-color: #777;
@@ -86,6 +89,7 @@ footer {
 	align-items: center;
 }
 
-footer button {
+/* neden footer tagine footer diye id eklememizi bekliyor test? */
+#footer button {
 	padding: 10px;
 }
