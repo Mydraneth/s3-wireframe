@@ -1,8 +1,91 @@
 /* #header, #hero, #gallery, #footer genişlikleri 750px olmalı */
+body {
+	width:  750px;
+	text-decoration: none;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
 
+h2 {
+	font-weight: bold;
+	font-size: 20px;
+}
+#menu {
+	display: flex;
+	justify-content: space-between;
+}
+
+#menu-list {
+	display: flex;
+	list-style-type: none;
+}
+
+#menu a {
+	background-color: #777;
+	padding: 20px;
+	color: #dddddd;
+	text-decoration: none;
+}
+
+#menu a:hover {
+	background-color: #000;
+}
 /* #menu bir <nav> olmalı */
 /* #menu içindeki linklerin arka plan rengi: #777 */
 /* #menu linklerine hover yapıldığında arka plan rengi: #000 */
 /* #menu linklerinin padding değeri: 20px */
 
+#hero-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #777;
+	height: 365px;
+	margin: 25px 0 25px 0;
+	color: #dddddd;
+	font-weight: bold;
+}
+
+#hero-section h1 {
+	margin-bottom: 20px;
+	color: white;
+	font-size: 40px;
+}
+#gallery {
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+.gallery-items {
+	display: flex;
+	flex-direction: column;
+
+}
+.gallery-photo {
+	width: 240px;
+	height: 180px;
+	background-color: #777;
+}
+
+.gallery-title {
+	text-align: center;
+	font-weight: bold;
+	margin-top: 20px;
+	font-size: 24px;
+	
+}
 /* #footer butonu metni 'Başa dön' olmalı */
+footer {
+	margin-top: 80px;
+	background-color: #777;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer button {
+	padding: 10px;
+}
